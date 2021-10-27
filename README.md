@@ -28,3 +28,12 @@ Basic heat simulation software. Models heat flow through a series heat circuit. 
    ```sh
    python app.py
    ```
+
+### Thermo Resources
+   - [Overview of Thermal Networks](http://www.ingaero.uniroma1.it/attachments/2176_Cap_3%20Thermal-electrical%20analogy.pdf)
+   - [Steady Conduction Heat Transfer](https://www.sfu.ca/~mbahrami/ENSC%20388/Notes/Staedy%20Conduction%20Heat%20Transfer.pdf)
+   - [Calculating Thermal Capacitance](https://www.sciencedirect.com/topics/engineering/thermal-capacitance)
+   - [More Thermal Capacitance Examples](https://www.sciencedirect.com/topics/computer-science/thermal-capacitance)
+   - [Calculating Thermal Time Constant](https://en.wikipedia.org/wiki/Time_constant)
+   - [List of Specific Heats](https://www.engineeringtoolbox.com/sensible-heat-storage-d_1217.html)
+   - [List of Specifc Heats for Metals](https://www.engineeringtoolbox.com/specific-heat-metals-d_152.html)
