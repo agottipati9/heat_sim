@@ -3,7 +3,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Basic heat simulation software. Models heat flow through a series heat circuit. Screenshots attached below.
+Basic heat simulation software. Models heat flow through a series heat circuit. Genearted graphs are interactive. Screenshots attached below.
 
 ![Home Page](/screenshots/HomePage.PNG?raw=true "Home Page")
 ![Graph Page](/screenshots/GraphPage.PNG?raw=true "Graph Page")
