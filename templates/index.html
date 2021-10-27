@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/static/styles/home.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heat Sim</title>
+</head>
+<div class="container contact-form">
+            <div class="contact-image">
+                <img src="/static/images/sun.gif" alt="sun_cartoon"/>
+            </div>
+            <form action="/simulate" method="post">
+              <h3>Simulate Your Heat System!</h3>
+               <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="number" name="T" class="form-control" placeholder="Ambient Temperature (C) e.g. 27" step=0.01 min=0.01 />
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="dT" class="form-control" placeholder="Solar Panel Heat Capture Rate (J/s) e.g. 4.1" step=0.01 min=0.01 />
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="r" class="form-control" placeholder="Heat Resistance of Pump (C/J) e.g. 0.75" step=0.01 min=0.01 />
+                        </div>
+                        <div class="form-group">
+                          <input type="number" name="m" class="form-control" placeholder="Mass of Tank (kg) e.g. 100" step=0.01 min=0.01 />
+                      </div>
+                      <div class="form-group">
+                          <input type="number" name="cp" class="form-control" placeholder="Specific Heat of Tank Material (J/kg C) e.g. 490" step=0.01 min=0.01 />
+                      </div>
+                      <div class="form-group">
+                          <input type="number" name="time" class="form-control" placeholder="Time to Simulate (s) e.g. 1000" step=1 min=1 />
+                      </div>
+                        <div class="form-group" style="margin-left:33%">
+                            <input type="submit" name="btnSubmit" class="btnContact"/>
+                        </div>
+                    </div>
+                </div>
+            </form>
+</div>

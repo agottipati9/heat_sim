@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/static/styles/plot.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heat Sim</title>
+</head>
+<body>
+  <div class="plot-image">
+    <img src="/static/images/heat_system.PNG" alt="heat_system"/>
+    <figcaption>Figure: Simulated Heat System</figcaption>
+  </div>
+  <div id='chart' class='chart'></div>
+  <div id='results'></div>
+</body>
+</html>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+  var graphs = {{graph | safe}};
+  Plotly.plot('chart', graphs, {});
+  var time_constant = {{time_constant | safe}};
+  var flow_peak = {{flow_peak | safe}};
+  document.getElementById('results').innerHTML = `<ul><li>Thermal Time Constant: ${time_constant} </li></ul><ul><li>Heat Flow Peak: ${flow_peak} </li></ul>`;
+</script>
+<!doctype html>
+<html>
